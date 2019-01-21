@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Шеф Поваров](https://up.htmlacademy.ru/htmlcss/24/user/815889).
-* Наставник: `Неизвестно`.
+* Студент: [Владислав Титов](https://up.htmlacademy.ru/htmlcss/24/user/815889).
+* Наставник: [Михаил  Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
