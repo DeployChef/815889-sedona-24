@@ -107,7 +107,15 @@
       </p>
       <a href="" class="hostel-button">Поиск гостиницы в седоне</a>
       <form>
-        <!-- Форма в след уроке верстается -->
+        <label for="date-in-field">Дата въезда:</label>
+        <input type="date" name="date-in" id="date-in-field">
+        <label for="date-out-field">Дата выезда:</label>
+        <input type="date" name="date-out" id="date-out-field">
+        <label for="adults-count-field">Взрослые</label>
+        <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
+        <label for="children-count-field">Дети</label>
+        <input type="number" name="children-count" value="0" id="children-count-field" min="1" max="5">
+        <input type="submit" value="Найти">
       </form>
     </section>
 

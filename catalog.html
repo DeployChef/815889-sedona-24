@@ -26,7 +26,31 @@
     <section class="search-form">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <form>
-        <!-- Здесь форма -->
+          <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label for="pool-field">Бассейн</label>
+          <input type="checkbox" name="pool" id="pool-field">
+          <label for="parking-field">Парковка</label>
+          <input type="checkbox" name="parking" id="parking-field">
+          <label for="wifi-field">WI-FI</label>
+          <input type="checkbox" name="wifi-count" id="wifi-field">
+          </fieldset>
+          <fieldset>
+              <legend>Тип жилья:</legend>
+              <label for="hotel-field">Гостиница</label>
+          <input type="checkbox" name="hotel" id="hotel-field">
+          <label for="motel-field">Мотель</label>
+          <input type="checkbox" name="motel" id="motel-field">
+          <label for="apparts-field">Аппартаменты</label>
+          <input type="checkbox" name="apparts" id="apparts-field">
+          </fieldset>
+          <label for="price-field">Стоимость в стуки(Р):</label>
+          <div>
+              От <output name="min-value">0</output>
+              До <output name="max-value">5000</output>
+          </div>
+          <input type="range" name="price" id="price-field" min="0" max="5000">
+          <input type="submit" value="">
       </form>
     </section>
     <section class="search-result">
