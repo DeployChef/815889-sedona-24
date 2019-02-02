@@ -109,15 +109,21 @@
       <form class="map-search" method="get" action="https://echo.htmlacademy.ru">
         <label for="date-in-field">Дата въезда:</label>
         <input type="date" name="date-in" id="date-in-field">
+        <button class="date-button">Выбрать дату</button>
         <label for="date-out-field">Дата выезда:</label>
         <input type="date" name="date-out" id="date-out-field">
+        <button class="date-button">Выбрать дату</button>
         <div class="half-size">
           <label for="adults-count-field">Взрослые</label>
+          <button class="up-button">Увеличить</button>
           <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
+          <button class="down-button">Уменьшить</button>
         </div>
         <div class="half-size">
           <label for="children-count-field">Дети</label>
+          <button class="up-button">Увеличить</button>
           <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
+          <button class="down-button">Уменьшить</button>
         </div>
         <button type="submit">
           Найти
