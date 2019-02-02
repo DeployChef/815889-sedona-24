@@ -111,11 +111,17 @@
         <input type="date" name="date-in" id="date-in-field">
         <label for="date-out-field">Дата выезда:</label>
         <input type="date" name="date-out" id="date-out-field">
-        <label for="adults-count-field">Взрослые</label>
-        <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
-        <label for="children-count-field">Дети</label>
-        <input type="number" name="children-count" value="0" id="children-count-field" min="1" max="5">
-        <input type="submit" value="Найти">
+        <div class="half-size">
+          <label for="adults-count-field">Взрослые</label>
+          <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
+        </div>
+        <div class="half-size">
+          <label for="children-count-field">Дети</label>
+          <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
+        </div>
+        <button type="submit">
+          Найти
+        </button>
       </form>
     </section>
 
@@ -141,7 +147,7 @@
       </li>
     </ul>
     <p class="footer-contacts">
-        Website by 
+      Website by
       <a class="footer-contacts-ico" href=""><img src="img/logo-htmlacademy.svg" alt="Разработчик" height="150" width="150"></a>
     </p>
   </footer>
