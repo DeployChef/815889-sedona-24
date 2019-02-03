@@ -25,32 +25,54 @@
     <h1 class="visually-hidden">Гостиницы</h1>
     <section class="search-form">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <form>
-          <fieldset>
-              <legend>Инфраструктура:</legend>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool-field">
               <label for="pool-field">Бассейн</label>
-          <input type="checkbox" name="pool" id="pool-field">
-          <label for="parking-field">Парковка</label>
-          <input type="checkbox" name="parking" id="parking-field">
-          <label for="wifi-field">WI-FI</label>
-          <input type="checkbox" name="wifi-count" id="wifi-field">
-          </fieldset>
-          <fieldset>
-              <legend>Тип жилья:</legend>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking-field">
+              <label for="parking-field">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi-count" id="wifi-field">
+              <label for="wifi-field">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="hotel-field">
               <label for="hotel-field">Гостиница</label>
-          <input type="checkbox" name="hotel" id="hotel-field">
-          <label for="motel-field">Мотель</label>
-          <input type="checkbox" name="motel" id="motel-field">
-          <label for="apparts-field">Аппартаменты</label>
-          <input type="checkbox" name="apparts" id="apparts-field">
-          </fieldset>
-          <label for="price-field">Стоимость в стуки(Р):</label>
-          <div>
-              От <output name="min-value">0</output>
-              До <output name="max-value">5000</output>
-          </div>
-          <input type="range" name="price" id="price-field" min="0" max="5000">
-          <input type="submit" value="">
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel-field">
+              <label for="motel-field">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apparts" id="apparts-field">
+              <label for="apparts-field">Аппартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <label for="price-field">Стоимость в стуки(Р):</label>
+        <div>
+            <label for="min-price-field">От</label>
+            <input type="text" name="min-price" id="min-price-field" value="0">
+        </div>
+        <div>
+            <label for="max-price-field">До</label>
+            <input type="text" name="max-price" id="max-price-field" value="3000">
+        </div>
+        <input type="range" name="price" id="price-field" min="0" max="5000">
+        <button type="submit">
+                Найти
+        </button>
       </form>
     </section>
     <section class="search-result">
@@ -126,7 +148,7 @@
         <li class="catalog-item">
           <h3>
             <a href="" class="catalog-item-title">
-             VILLAS AT POCO DIABLO
+              VILLAS AT POCO DIABLO
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -167,8 +189,8 @@
       </li>
     </ul>
     <p class="footer-contacts">
-            Website by 
-          <a class="footer-contacts-ico" href=""><img src="img/logo-htmlacademy.svg" alt="Разработчик" height="150" width="150"></a>
+      Website by
+      <a class="footer-contacts-ico" href=""><img src="img/logo-htmlacademy.svg" alt="Разработчик" height="150" width="150"></a>
     </p>
   </footer>
 </body>
