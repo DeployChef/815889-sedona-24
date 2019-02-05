@@ -1,0 +1,39 @@
+body{
+    margin:0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size:14px;
+    line-height: 24px;
+
+    background-color:#ffffff;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation{
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.site-navigation{
+   list-style: none;
+}
+
+.site-navigation a{
+    color: #000000;
+}
+
+.site-navigation a:hover
+{
+    color: #81b3d2;
+}
+
+.site-navigation a:focus
+{
+    color: rgba(0, 0, 0, 0.3);
+}
