@@ -12,6 +12,17 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .main-navigation {
     background-color: #ffffff;
     color: #000000;
@@ -34,6 +45,123 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.features-list {
+.intro{
+    font-size:21px;
+    font-weight:bold;
+}
+
+.features {
+    text-align:center;
+}
+
+.features ul {
+    list-style:none;
+}
+
+.feature-picture-right{
+    background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.feature-picture-left{
+    background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.feature-item{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.feature-item h3{
+    font-size: 21px;
+}
+
+.number-feature-list{
+    background-color: #eeeeee;
+    color:#000000;
+}
+
+.hotels-search b{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.footer-hashtag{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social{
     list-style: none;
+}
+
+.footer-contacts{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.footer-contacts-ico{
+    fill:#81b3d2;
+}
+
+.footer-contacts-ico:focus{
+    fill:#bdbbbc;
+}
+
+.main-footer{
+    color: #000000;
+    background: #ffffff;
+    opacity: 0.9;
+}
+
+.hotels-search .popup-button{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.hotels-search .search-button{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.button{
+    font: inherit;
+    border: none;
+    text-transform: uppercase;
+}
+
+.blue-button{
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+
+.blue-button:hover{
+    background-color: #669ec0;
+}
+
+.blue-button:focus,
+.blue-button:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.brown-button{
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.brown-button:hover{
+    background-color: #604e43;
+}
+
+.brown-button:focus,
+.brown-button:active{
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }

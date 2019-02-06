@@ -25,10 +25,6 @@
   <main class="container">
 
     <section class="intro">
-      <b>
-        SEDONA
-      </b>
-
       <h1>
         Седона — небольшой городок в Аризоне,
         заслуживающий большего!
@@ -107,27 +103,27 @@
         Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a href="" class="hostel-button">Поиск гостиницы в седоне</a>
+      <a href="" class="popup-button brown-button">Поиск гостиницы в седоне</a>
       <form class="map-search" method="get" action="https://echo.htmlacademy.ru">
         <label for="date-in-field">Дата въезда:</label>
         <input type="text" name="date-in" id="date-in-field">
-        <button type="button" class="date-button">Выбрать дату</button>
+        <button type="button" class="button date-button">Выбрать дату</button>
         <label for="date-out-field">Дата выезда:</label>
         <input type="text" name="date-out" id="date-out-field">
-        <button type="button" class="date-button">Выбрать дату</button>
+        <button type="button" class="button date-button">Выбрать дату</button>
         <div class="half-size">
           <label for="adults-count-field">Взрослые</label>
-          <button type="button" class="down-button">Уменьшить</button>
+          <button type="button" class="button down-button">Уменьшить</button>
           <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
-          <button type="button" class="up-button">Увеличить</button>
+          <button type="button" class="button up-button">Увеличить</button>
         </div>
         <div class="half-size">
           <label for="children-count-field">Дети</label>
-          <button type="button" class="down-button">Уменьшить</button>
+          <button type="button" class="button down-button">Уменьшить</button>
           <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
-          <button type="button" class="up-button">Увеличить</button>
+          <button type="button" class="button up-button">Увеличить</button>
         </div>
-        <button type="submit">
+        <button type="submit" class="button blue-button search-button">
           Найти
         </button>
       </form>
@@ -139,7 +135,7 @@
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <p class="footer-hashtag">
       #VISITSEDONA
     </p>
@@ -154,9 +150,10 @@
         <a href="" class="social-button">Youtube</a>
       </li>
     </ul>
-    <p class="footer-contacts">
-      Website by
-      <a class="footer-contacts-ico" href=""><img src="img/logo-htmlacademy.svg" alt="Разработчик" height="150" width="150"></a>
+    <p class="footer-contacts">Website by
+      <a href="">
+        <img class="footer-contacts-ico" src="img/logo-htmlacademy.svg" alt="Разработчик" height="150" width="150">
+      </a>
     </p>
   </footer>
 </body>
