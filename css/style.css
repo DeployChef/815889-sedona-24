@@ -48,6 +48,7 @@ a {
 .intro{
     font-size:21px;
     font-weight:bold;
+    background-image: url("../img/background-photo.jpg");
 }
 
 .features {
