@@ -124,11 +124,11 @@ a {
 }
 
 .footer-contacts-ico{
-    color:#81b3d2;
+    fill:#81b3d2;
 }
 
 .footer-contacts-ico:focus{
-    color:#bdbbbc;
+    fill:#bdbbbc;
 }
 
 .main-footer{
@@ -151,6 +151,7 @@ a {
 
 .button{
     font: inherit;
+    font-weight: bold;
     border: none;
     text-transform: uppercase;
 }
@@ -243,6 +244,7 @@ a {
 .result-count{
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
 }
 
 .sort-result{
@@ -256,16 +258,16 @@ a {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    color: #cacaca;
+    fill: #cacaca;
 }
 
 .result-updown-button:hover{
-    color: #000000;
+    fill: #000000;
 }
 
 .result-updown-button:focus,
 .result-updown-button:active{
-    color: #81b3d2;
+    fill: #81b3d2;
 }
 
 .result-ascending{
@@ -282,6 +284,7 @@ a {
 }
 
 .catalog-item-title {
+    font-weight: bold;
     color: #000000;
 }
 
