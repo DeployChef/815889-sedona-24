@@ -53,6 +53,7 @@ a {
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: center;
+    text-align: center;
 }
 
 .features {
@@ -91,6 +92,11 @@ a {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
+    text-align: center;
+}
+
+.hotels-search p{
+    text-align: center;
 }
 
 .hotels-search input{
@@ -295,4 +301,28 @@ a {
 .catalog-item-title:focus,
 .catalog-item-title:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.filter{
+    background-image: url("../img/filter-background.jpg");
+    background-repeat:  no-repeat;
+}
+
+.filter legend{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold; 
+}
+
+.price-label{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold; 
+}
+
+.filter button[type=submit]
+{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px double #ffffff;
 }
