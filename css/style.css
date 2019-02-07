@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
     background-color: #ffffff;
     color: #000000;
     text-transform: uppercase;
@@ -214,3 +214,64 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+.catalog-list{
+    list-style: none;
+}
+
+.sort-list{
+    list-style: none;
+}
+
+.catalog-rating-stars{
+    list-style: none;
+}
+
+.catalog-star{
+    background-image: url("../img/star.svg");
+    width: 18px;
+    height: 17px;
+}
+
+.catalog-rating{
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.result-count{
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sort-result{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.result-updown-button{
+    width: 11px;
+    height: 10px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #cacaca;
+}
+
+.result-updown-button:hover{
+    color: #000000;
+}
+
+.result-updown-button:focus,
+.result-updown-button:active{
+    color: #81b3d2;
+}
+
+.result-ascending{
+    background-image: url("../img/icon-up-dir.svg");
+}
+
+.result-descending{
+    background-image: url("../img/icon-down-dir.svg");
+}
+
