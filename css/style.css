@@ -41,7 +41,8 @@ a {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:focus,
+.site-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -278,4 +279,17 @@ a {
 .map-search button[type=button]{
     background-color: #f2f2f2;
     color: #000000;
+}
+
+.catalog-item-title {
+    color: #000000;
+}
+
+.catalog-item-title:hover {
+    color: #81b3d2;
+}
+
+.catalog-item-title:focus,
+.catalog-item-title:active {
+    color: rgba(0, 0, 0, 0.3);
 }
