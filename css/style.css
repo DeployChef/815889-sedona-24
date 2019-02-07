@@ -275,3 +275,7 @@ a {
     background-image: url("../img/icon-down-dir.svg");
 }
 
+.map-search button[type=button]{
+    background-color: #f2f2f2;
+    color: #000000;
+}
