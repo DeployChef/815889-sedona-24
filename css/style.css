@@ -48,7 +48,10 @@ a {
 .intro{
     font-size:21px;
     font-weight:bold;
-    background-image: url("../img/background-photo.jpg");
+    background-image: url("../img/intro-welcome.svg"), url("../img/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center;
 }
 
 .features {
@@ -185,4 +188,29 @@ a {
 .catalog-item-title{
     font-size:21px;
     line-height: 26px;
+}
+
+.social-button{
+    color: #ffffff;
+    width: 46px;
+    height: 48px;
+    display: block;
+}
+
+.social-button-twitter{
+    background-image: url("../img/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button-facebook{
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button-youtube{
+    background-image: url("../img/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
