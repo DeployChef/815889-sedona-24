@@ -70,10 +70,14 @@ a {
     background-position: center, 0 744px, center;
 }
 
-.features p{
+.features{
+    
+    text-align: center;
+}
+
+.features-intro{
     line-height: 26px;
     margin-bottom: 56px;
-    text-align: center;
 }
 
 .features ul {
@@ -98,6 +102,7 @@ a {
     background-color: #eeeeee;
     color: #000000;
 }
+
 
 .hotels-search b {
     font-size: 30px;
@@ -169,7 +174,7 @@ a {
     width: 568px;
     margin: 0 auto;
     text-align: center;
-    height: 86px;
+    padding: 33px;
 }
 
 .hotels-search .search-button {
@@ -367,6 +372,7 @@ a {
 
 .features ul{
     margin: 0px;
+    padding: 0px;
 }
 
 .main-content{
@@ -376,12 +382,22 @@ a {
 
 .icons-feature-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .number-feature-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.number-feature-list .feature-item{
+    width: 400px;
+    padding:60px 140px;
+}
+
+.icons-feature-list .feature-item{
+    width: 400px;
+    padding:60px 140px;
 }
 
 .feature-picture-right{
@@ -400,7 +416,6 @@ a {
     background-image: url("../img/town-side.jpg");
     background-size: cover;
     width: 100%;
-    height: 256px;
 }
 
 .feature-picture-left{
@@ -420,6 +435,11 @@ a {
     background-image: url("../img/devil-bridge-side.jpg");
     background-size: cover;
     width: 100%;
-    height: 256px;
 }
 
+.wrapper{
+    margin-top:57px;
+    text-align: center;
+    width: 434px;
+    margin: 0 auto;
+}
