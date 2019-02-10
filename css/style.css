@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    box-shadow: 0px 5px 15px 0 #000000;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -29,12 +35,24 @@ a {
     font-weight: bold;
 }
 
-.site-navigation {
-    list-style: none;
-}
-
 .site-navigation a {
     color: #000000;
+}
+
+.site-navigation {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+
+.site-navigation li {
+    padding:18px 0;
+    width: 240px;
+}
+
+.site-navigation li:nth-child(3){
+    margin-left: auto;
 }
 
 .site-navigation a:hover {
@@ -63,11 +81,11 @@ a {
 
 .background-sedona {
     width: 100%;
-    height: 800px;
+    height: 509px;
     background-image: url("../img/intro-welcome.svg"), url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
     background-repeat: no-repeat;
-    background-size: 459px 353px, 100% 59px, cover;
-    background-position: center, 0 744px, center;
+    background-size: 459px 353px, 100% 59px, 100% 509px;
+    background-position: center, 0 453px, bottom;
 }
 
 .features{
@@ -363,18 +381,11 @@ a {
     width: 140px;
     height: 72px;
     position: absolute;
-    top:-1px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.site-navigation {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
 
-.site-navigation li {
-    width: 240px;
-}
 
 .features ul{
     margin: 0px;
