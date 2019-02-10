@@ -446,8 +446,9 @@ a {
 }
 
 .wrapper{
-    margin-top:57px;
+    padding-top:57px;
+    padding-bottom:52px;
     text-align: center;
-    width: 434px;
+    width: 440px;
     margin: 0 auto;
 }
