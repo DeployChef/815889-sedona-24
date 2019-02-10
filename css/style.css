@@ -176,6 +176,7 @@ a {
 }
 
 .main-footer {
+    margin-top: -120px; 
     display: flex;
     justify-content: space-between;
     height: 120px;
@@ -197,10 +198,18 @@ a {
 
 
 .map-search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     width: 568px;
     margin: 0 auto;
+}
+
+.map{
+    height: 593px;
+    background-color: #5496bd;
 }
 
 
