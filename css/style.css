@@ -48,7 +48,7 @@ a {
 }
 
 .site-navigation li {
-    padding:18px 0;
+    padding:16px 0;
     width: 240px;
 }
 
@@ -85,8 +85,8 @@ a {
     height: 509px;
     background-image: url("../img/intro-welcome.svg"), url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
     background-repeat: no-repeat;
-    background-size: 459px 353px, 100% 59px, 100% 509px;
-    background-position: center, 0 453px, bottom;
+    background-size: 459px 353px, 100% 59px, cover;
+    background-position: center, 0 453px, 0 -80px;
 }
 
 .features{
@@ -96,7 +96,6 @@ a {
 
 .features-intro{
     line-height: 26px;
-    margin-bottom: 56px;
 }
 
 .features ul {
@@ -155,22 +154,25 @@ a {
     line-height: 26px;
     text-align: center;
     width: 200px;
-    padding: 50px;
+    padding: 0 100px;
+    margin-top: 12px; 
 }
 
 .footer-social {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 160px;
+    width: 155px;
     padding: 0;
+    margin-top: 7px; 
 }
 
 .footer-contacts {
     font-size: 14px;
     line-height: 26px;
     width: 200px;
-    padding: 50px;
+    padding: 0 100px;
+    margin-top: 0px;
 }
 
 .footer-contacts-ico {
@@ -491,6 +493,11 @@ a {
 .icons-feature-list{
     display: flex;
     justify-content: space-around;
+    padding: 10px;
+}
+
+.icons-feature-list .feature-item{
+    padding: 58px 0;
 }
 
 .number-feature-list{
@@ -498,18 +505,57 @@ a {
     justify-content: space-around;
 }
 
+.house-ico{
+    margin: 0 auto;
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/house-ico.svg");
+}
+
+.burger-ico{
+    margin: 0 auto;
+    width: 74px;
+    height: 70px;
+    background-image: url("../img/burger-ico.svg");
+}
+
+.gift-ico{
+    margin: 0 auto;
+    width: 64px;
+    height: 76px;
+    background-image: url("../img/gift-ico.svg");
+}
+
 .feature-item{
-    width: 400px;
-    padding:50px;
+    width: 309px;
+    padding:26px 46px 38px;
+    flex-shrink: 0;
 }
 
 .feature-picture-right{
+    margin-top: 48px;
     display: flex;
 }
 .feature-picture-right .feature-item
 {
     background-color: #81b3d2;
     color: #ffffff;
+}
+
+.feature-item h3{
+    padding: 0 79px;
+}
+
+.feature-item  p{
+    padding: 9px 3px;
+}
+
+.number-feature-list p{
+    padding: 9px 15px;
+}
+
+.number-feature-list li:last-child p{
+    padding: 9px 25px;
 }
 
 .feature-picture-right::after{
@@ -536,10 +582,14 @@ a {
     width: 100%;
 }
 
-.wrapper{
-    padding-top:57px;
-    padding-bottom:52px;
+.search-intro{
+    padding-top:50px;
+    padding-bottom:25px;
     text-align: center;
     width: 440px;
     margin: 0 auto;
+}
+
+.search-intro p{
+    padding: 12px 0px;
 }
