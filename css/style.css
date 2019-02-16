@@ -48,7 +48,7 @@ a {
 }
 
 .site-navigation li {
-    padding:16px 0;
+    padding:17px 0;
     width: 240px;
 }
 
@@ -300,11 +300,18 @@ a {
     background-position: center;
 }
 
+.catalog-item-info{
+    padding: 24px 0px 35px;
+}
 
+.catalog-item-info p{
+
+}
 
 .catalog-list {
     list-style: none;
     padding: 0;
+    margin:0;
 }
 
 .sort-list {
@@ -314,31 +321,41 @@ a {
 }
 
 .sort-result p{
-    padding: 22px 0; 
+    padding: 25px 23px 0px 28px; 
     font-size: 12px;
     line-height: 18px;
 }
 
 .catalog-item-info .button{
-    padding: 8px 17px;
+    padding: 4px 17px;
+    margin-right: 3px;
 }
-
-.catalog-item-info .brown-button{
-    margin-left: 6px;
+.price{
+    padding: 7px 0 16px ;
 }
-
+.price p{
+    display: inline-block;
+    margin-right: 3px;
+}
 
 .sort-result{
     display: flex;
+    padding: 0 50px;
 }
 
 .sort-list{
     display: flex;
+    padding: 0;
 }
 
 .sort-item{
-    padding: 22px 0; 
-    width: 100px;
+    padding: 26px 16px 0; 
+}
+
+.sort-direction{
+    padding: 41px 17px 0px;
+    margin-left: auto;
+    display: flex; 
 }
 
 
@@ -346,13 +363,8 @@ a {
     display: flex;
 }
 
-.result-ascending{
-    margin-left: auto;
-}
-
 .result-count {
-    padding: 31px 50px; 
-    width: 115px;
+    padding: 30px 21px; 
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -365,11 +377,12 @@ a {
 .catalog-rating-stars {
     list-style: none;
     display: flex;
-
+    justify-content: flex-end;
 }
 
 .catalog-item-image{
-    order: -1;
+    order: -1;    
+    margin: 30px 30px 0px 72px;
 }
 
 .catalog-category{
@@ -390,23 +403,28 @@ a {
     background-image: url("../img/star.svg");
     width: 18px;
     height: 17px;
+    margin-left:6px;
 }
 
 
 .catalog-rating{
     margin-left: auto; 
+    padding: 27px 73px 15px;
 }
 
 .catalog-rating p {
     background-color: #f2f2f2;
     color: #000000;
+    margin-top: 48px; 
+    float: right;
+    padding: 2px 12px;
 }
 
 
 .result-updown-button {
     width: 11px;
     height: 10px;
-    display: block;
+    padding: 0 6px;
     background-repeat: no-repeat;
     background-position: center;
     fill: #cacaca;
@@ -450,6 +468,23 @@ a {
 .filter {
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
+    background-position-y:-290px;
+    display: flex;
+    height: 217px;
+}
+
+.filter fieldset {
+    border: 0;
+}
+
+
+
+.filter ul{
+    list-style: none;
+}
+
+.price-container{
+    margin-left: auto; 
 }
 
 .filter legend {

@@ -64,27 +64,29 @@
               </li>
             </ul>
           </fieldset>
-          <label class="price-label" for="price-field">Стоимость в стуки(Р):</label>
-          <div>
-            <label for="min-price-field">От</label>
-            <input type="text" name="min-price" id="min-price-field" value="0">
+          <div class="price-container">
+            <label class="price-label" for="price-field">Стоимость в стуки(Р):</label>
+            <div>
+              <label for="min-price-field">От</label>
+              <input type="text" name="min-price" id="min-price-field" value="0">
+            </div>
+            <div>
+              <label for="max-price-field">До</label>
+              <input type="text" name="max-price" id="max-price-field" value="3000">
+            </div>
+            <input type="range" name="price" id="price-field" min="0" max="5000">
+            <button type="submit">
+              Найти
+            </button>
           </div>
-          <div>
-            <label for="max-price-field">До</label>
-            <input type="text" name="max-price" id="max-price-field" value="3000">
-          </div>
-          <input type="range" name="price" id="price-field" min="0" max="5000">
-          <button type="submit">
-            Найти
-          </button>
         </form>
       </section>
       <section class="search-result">
 
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <div class="sort-result border-bottom">
-          <b class="result-count">НАЙДЕНО:3</b>
-          <p>СОРТИРОВКА</p>
+          <b class="result-count">НАЙДЕНО: 3</b>
+          <p>СОРТИРОВКА:</p>
           <ul class="sort-list">
             <li class="sort-item">
               <a href="">По цене</a>
@@ -96,29 +98,32 @@
               <a href="">По рейтингу</a>
             </li>
           </ul>
-          <a href="" class="result-updown-button result-ascending"><span class="visually-hidden">Сортировка по
-              возрастанию</span></a>
-          <a href="" class="result-updown-button result-descending"><span class="visually-hidden">Сортировка по
-              убыванию</span></a>
+          <div class="sort-direction">
+            <a href="" class="result-updown-button result-ascending"><span class="visually-hidden">Сортировка по
+                возрастанию</span></a>
+            <a href="" class="result-updown-button result-descending"><span class="visually-hidden">Сортировка по
+                убыванию</span></a>
+          </div>
         </div>
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="catalog-list">
           <li class="catalog-item border-bottom">
-              <figure class="catalog-item-image">
-                  <a href="">
-                    <img src="img/amara-hotel.jpg"  width="135" height="90" alt="Набор для путешествий «Baxter of California»">
-                  </a>
-                </figure>
+            <figure class="catalog-item-image">
+              <a href="">
+                <img src="img/amara-hotel.jpg" width="135" height="90" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </figure>
             <div class="catalog-item-info">
               <h3 class="catalog-item-title">
-                <a href="" >
+                <a href="">
                   AMARA RESORT & SPA
                 </a>
               </h3>
-
+              <div class="price">
               <p class="catalog-category">Гостиница</p>
               <p class="catalog-item-price">ОТ 4000 Р.</p>
-              
+              </div>
+
               <a class="button blue-button" href="#">Подробнее</a>
               <a class="button brown-button" href="#">Забронировать</a>
             </div>
@@ -134,22 +139,23 @@
           </li>
 
           <li class="catalog-item border-bottom">
-              <figure class="catalog-item-image">
-                  <a href="">
-                    <img src="img/desert-motel.jpg" width="135" height="90" alt="Набор для путешествий «Baxter of California»">
-                  </a>
-                </figure>
+            <figure class="catalog-item-image">
+              <a href="">
+                <img src="img/desert-motel.jpg" width="135" height="90" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </figure>
             <div class="catalog-item-info">
-              <h3>
-                <a href="" class="catalog-item-title">
+              <h3 class="catalog-item-title">
+                <a href="">
                   DESERT QUAIL INN
                 </a>
               </h3>
-             
+
+              <div class="price">
               <p class="catalog-category">МОТЕЛЬ</p>
 
               <p class="catalog-item-price">ОТ 5000 Р.</p>
-
+              </div>
               <a class="button blue-button" href="#">Подробнее</a>
               <a class="button brown-button" href="#">Забронировать</a>
             </div>
@@ -164,21 +170,23 @@
           </li>
 
           <li class="catalog-item border-bottom">
-              <figure class="catalog-item-image">
-                  <a href="">
-                    <img src="img/villas-apparts.jpg"  width="135" height="90" alt="Набор для путешествий «Baxter of California»">
-                  </a>
-                </figure>
+            <figure class="catalog-item-image">
+              <a href="">
+                <img src="img/villas-apparts.jpg" width="135" height="90" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </figure>
             <div class="catalog-item-info">
-              <h3>
-                <a href="" class="catalog-item-title">
+              <h3 class="catalog-item-title">
+                <a href="">
                   VILLAS AT POCO DIABLO
                 </a>
               </h3>
-              
+
+              <div class="price">
               <p class="catalog-category">Апартаменты</p>
 
               <p class="catalog-item-price">ОТ 2000 Р.</p>
+              </div>
 
               <a class="button blue-button" href="#">Подробнее</a>
               <a class="button brown-button" href="#">Забронировать</a>
@@ -197,26 +205,26 @@
     </main>
 
     <footer class="main-footer">
-        <p class="footer-hashtag">
-          #VISITSEDONA
-        </p>
-        <ul class="footer-social">
-          <li>
-            <a href="" class="blue-button social-button social-button-twitter"><span class="visually-hidden">Twitter</span></a>
-          </li>
-          <li>
-            <a href="" class="blue-button social-button social-button-facebook"><span class="visually-hidden">Facebook</span></a>
-          </li>
-          <li>
-            <a href="" class="blue-button social-button social-button-youtube"><span class="visually-hidden">Youtube</span></a>
-          </li>
-        </ul>
-        <p class="footer-contacts">Website by
-          <a href="https://htmlacademy.ru">
-            <img class="footer-contacts-ico" src="img/logo-htmlacademy.svg" alt="Разработчик" height="41" width="115">
-          </a>
-        </p>
-      </footer>
+      <p class="footer-hashtag">
+        #VISITSEDONA
+      </p>
+      <ul class="footer-social">
+        <li>
+          <a href="" class="blue-button social-button social-button-twitter"><span class="visually-hidden">Twitter</span></a>
+        </li>
+        <li>
+          <a href="" class="blue-button social-button social-button-facebook"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="" class="blue-button social-button social-button-youtube"><span class="visually-hidden">Youtube</span></a>
+        </li>
+      </ul>
+      <p class="footer-contacts">Website by
+        <a href="https://htmlacademy.ru">
+          <img class="footer-contacts-ico" src="img/logo-htmlacademy.svg" alt="Разработчик" height="41" width="115">
+        </a>
+      </p>
+    </footer>
   </div>
 </body>
 
