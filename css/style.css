@@ -352,6 +352,21 @@ a {
     padding: 26px 16px 0; 
 }
 
+.sort-item a{
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom:  1px dotted #81b3d2;; 
+}
+
+.sort-item a:hover{
+    color: #81b3d2;
+}
+
+.sort-item a:focus,
+.sort-item a:active{
+    color: #000000;
+    border-bottom: 0;
+}
+
 .sort-direction{
     padding: 41px 17px 0px;
     margin-left: auto;
@@ -417,7 +432,7 @@ a {
     color: #666666;
     margin-top: 48px; 
     float: right;
-    padding: 2px 12px;
+    padding: 3px 14px;
 }
 
 
