@@ -466,6 +466,7 @@ a {
 }
 
 .filter {
+    color: #ffffff;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
     background-position-y:-290px;
