@@ -361,10 +361,13 @@ a {
     color: #81b3d2;
 }
 
-.sort-item a:focus,
 .sort-item a:active{
-    color: #000000;
     border-bottom: 0;
+}
+.sort-item a:focus
+{
+    color: #000000;
+   
 }
 
 .sort-direction{
