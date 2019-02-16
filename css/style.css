@@ -414,7 +414,7 @@ a {
 
 .catalog-rating p {
     background-color: #f2f2f2;
-    color: #000000;
+    color: #666666;
     margin-top: 48px; 
     float: right;
     padding: 2px 12px;
@@ -471,18 +471,26 @@ a {
     background-repeat: no-repeat;
     background-position-y:-290px;
     display: flex;
-    height: 217px;
+    padding: 0 60px;
 }
 
 .filter fieldset {
     border: 0;
+    margin-top: 27px;
+    padding-right: 102px;
 }
 
-
-
-.filter ul{
+.search-check-list{
     list-style: none;
+    padding: 0;
+    margin: 21px 0; 
 }
+
+.search-check-list li{
+    margin-bottom: 25px;
+}
+
+
 
 .price-container{
     margin-left: auto; 
