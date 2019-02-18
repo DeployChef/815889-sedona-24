@@ -133,12 +133,7 @@ a {
     text-align: center;
 }
 
-.hotels-search input {
-    font: inherit;
-    background-color: #f2f2f2;
-    color: #000000;
-    border: 0;
-}
+
 
 .hotels-search input:hover {
     background-color: #ebebeb;
@@ -208,7 +203,9 @@ a {
     margin: 0 auto;
     text-align: center;
     padding: 30px;
+    letter-spacing: 0.3px;
 }
+
 
 
 .map-search {
@@ -217,8 +214,112 @@ a {
     transform: translateX(-50%);
     background-color: white;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    width: 568px;
+    width: 458px;
     margin: 0 auto;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 55px;
+}
+
+.map-search input {
+    font: inherit;
+    background-color: #f2f2f2;
+    color: #000000;
+    border: 0;
+}
+
+.map-search label {
+   text-align: right;
+}
+
+.map-search input[type="text"] {
+    width: 306px;
+    margin-left: 20px; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans","Arial",sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    background: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    outline: none;
+}
+
+
+input.booking-calendar-select[type="text"] {
+    width: 26px;
+    padding: 5px 1px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    background: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    outline: none;
+  }
+  
+  input.booking-calendar:focus, input.booking-calendar-select:focus,
+  input.booking-calendar:focus:hover, input.booking-calendar-select:focus:hover {
+    background: white;
+    border: 2px solid #e5e5e5;
+  }
+  
+  input.booking-calendar:hover,
+  input.booking-calendar-select:hover {
+    background: #ebebeb;
+    border: 2px solid #ebebeb;
+  }
+
+.date-button{
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 22px;
+    background-position: center;
+    padding: 16px;
+    margin-left: -6px;
+    margin-top: -4px 
+}
+
+.icon-calendar {
+    position: absolute;
+    left: 480px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 20px;
+    color: #c2c2c2;
+  }
+  
+  .icon-calendar:hover {
+    color: black;
+  }
+  
+  .icon-calendar:active {
+    color: #81b3d2;
+  }
+  
+
+  .icon-calendar:before {
+    content: "\e800";
+  }
+
+.half-size-pickers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-field{
+    padding-bottom: 40px; 
+}
+
+.control{
+    background-color: #f2f2f2;
 }
 
 .map{
@@ -229,9 +330,11 @@ a {
 
 
 .hotels-search .search-button {
+    margin-top: 21px; 
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    padding: 15px 0;
 }
 
 .button {
@@ -302,10 +405,6 @@ a {
 
 .catalog-item-info{
     padding: 24px 0px 35px;
-}
-
-.catalog-item-info p{
-
 }
 
 .catalog-list {

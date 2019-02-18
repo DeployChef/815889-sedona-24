@@ -50,12 +50,12 @@
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="feature-item">
-              <div class="burger-ico"></div>
+            <div class="burger-ico"></div>
             <h3>ЕДА</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature-item">
-              <div class="gift-ico"></div>
+            <div class="gift-ico"></div>
             <h3>СУВЕНИРЫ</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -100,23 +100,27 @@
         </div>
         <a href="" class="popup-button brown-button">Поиск гостиницы в седоне</a>
         <form class="map-search" method="get" action="https://echo.htmlacademy.ru">
-          <label for="date-in-field">Дата въезда:</label>
-          <input type="text" name="date-in" id="date-in-field">
-          <button type="button" class="button date-button"><span class="visually-hidden">Выбрать дату въезда</span></button>
-          <label for="date-out-field">Дата выезда:</label>
-          <input type="text" name="date-out" id="date-out-field">
-          <button type="button" class="button date-button"><span class="visually-hidden">Выбрать дату выезда</span></button>
-          <div class="half-size">
-            <label for="adults-count-field">Взрослые</label>
-            <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
-            <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
-            <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
+          <div class="search-field">
+            <label for="ch1">Дата заезда: <i class="icon-calendar"></i></label>
+							<input class="booking-calendar" name="checkin" type="text" placeholder="24 апреля 2014" id="ch1"/>
           </div>
-          <div class="half-size">
-            <label for="children-count-field">Дети</label>
-            <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
-            <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
-            <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
+          <div class="search-field">
+            <label for="ch2">Дата выезда: <i class="icon-calendar"></i></label>
+						<input class="booking-calendar" name="checkout" type="text" placeholder="4 июля 2014" id="ch2"/>
+          </div>
+          <div class="half-size-pickers search-field">
+            <div>
+              <label for="adults-count-field">Взрослые:</label>
+              <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
+              <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
+              <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
+            </div>
+            <div>
+              <label for="children-count-field">Дети:</label>
+              <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
+              <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
+              <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
+            </div>
           </div>
           <button type="submit" class="button blue-button search-button">
             Найти
