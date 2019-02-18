@@ -65,19 +65,21 @@
             </ul>
           </fieldset>
           <div class="price-container">
-            <label class="price-label" for="price-field">Стоимость в стуки(Р):</label>
-            <div>
-              <label for="min-price-field">От</label>
-              <input type="text" name="min-price" id="min-price-field" value="0">
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <div>
-              <label for="max-price-field">До</label>
-              <input type="text" name="max-price" id="max-price-field" value="3000">
-            </div>
-            <input type="range" name="price" id="price-field" min="0" max="5000">
-            <button type="submit">
-              Найти
-            </button>
           </div>
         </form>
       </section>
