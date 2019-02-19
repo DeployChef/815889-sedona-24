@@ -376,6 +376,10 @@ input.booking-calendar-select[type="text"] {
 .catalog-item-title {
     font-size: 21px;
     line-height: 26px;
+    letter-spacing: 0.1px;
+}
+.catalog-item-title a{
+    color: #000;
 }
 
 .social-button {
@@ -603,10 +607,49 @@ input.booking-calendar-select[type="text"] {
     margin: 21px 0; 
 }
 
-.search-check-list li{
+.filter-option{
+    padding-left: 40px;
     margin-bottom: 25px;
 }
 
+.filter-option label {
+    position: relative;
+  
+    display: block;
+  
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .filter-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -1px;
+  
+    width: 27px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  
+  }
+
+  .filter-checkbox:checked + label::after {
+    content: "";
+  
+    position: absolute;
+    left: -40px;
+    top: -1px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  
+    width: 27px;
+    height: 23px;
+    
+  }
 
 
 .price-container{
