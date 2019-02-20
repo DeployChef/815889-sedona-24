@@ -167,18 +167,29 @@ a {
     line-height: 26px;
     width: 200px;
     padding: 0 100px;
-    margin-top: 0px;
+    margin-top: -16px;
 }
 
-.footer-contacts-ico {
+
+
+  .footer-contacts-ico {
+      display: inline-block;
+      position: relative;
+    top: 18px;
+    left: 10px;
+    width: 115px;
+    height: 41px;
+    fill: #231f20;
+  }
+  
+  .footer-contacts-ico:hover,
+  .footer-contacts-ico:focus .footer-contacts-ico {
     fill: #81b3d2;
-    margin-bottom:-15px; 
-    margin-left: 5px; 
-}
-
-.footer-contacts-ico:focus {
+  }
+  
+  .footer-contacts-ico:active {
     fill: #bdbbbc;
-}
+  }
 
 .main-footer {
     display: flex;
@@ -292,6 +303,18 @@ a {
 .catalog-item-title a{
     color: #000;
 }
+
+.catalog-item-title a:hover{
+    color: #81b3d2;
+}
+
+.catalog-item-title a:active,
+.catalog-item-title a:focus
+{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 .social-button {
     color: #ffffff;
@@ -871,7 +894,7 @@ a {
     color: #000;
   }
 
-  .booking-calendar{
+  .booking-calendar input{
       padding: 8px 40px 8px 10px;
   }
 
@@ -1036,4 +1059,29 @@ a {
   .search-field-column:last-of-type label{
     padding: 6px 25px 0px 50px;
     width: auto;
+  }
+
+  .search-calendar-btn {
+    position: absolute;
+    display: block;
+    right: 55px;
+    width: 39px;
+    height: 38px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-calendar-icon {
+    fill: #cacaca;
+  }
+  
+  .search-calendar-btn:hover .search-calendar-icon,
+  .search-calendar-btn:focus .search-calendar-icon  {
+    fill: #000;
+  }
+  
+  .search-calendar-btn:active .search-calendar-icon {
+    fill: #81b3d2;
   }
