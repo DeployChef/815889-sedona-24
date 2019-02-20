@@ -102,26 +102,30 @@
         <form class="map-search" method="get" action="https://echo.htmlacademy.ru">
           <div class="search-field">
             <label for="ch1">Дата заезда: <i class="icon-calendar"></i></label>
-							<input class="booking-calendar" name="checkin" type="text" placeholder="24 апреля 2014" id="ch1"/>
+            <input class="booking-calendar" name="checkin" type="text" placeholder="24 апреля 2014" id="ch1" />
           </div>
           <div class="search-field">
             <label for="ch2">Дата выезда: <i class="icon-calendar"></i></label>
-						<input class="booking-calendar" name="checkout" type="text" placeholder="4 июля 2014" id="ch2"/>
+            <input class="booking-calendar" name="checkout" type="text" placeholder="4 июля 2014" id="ch2" />
           </div>
           <div class="half-size-pickers search-field">
-            <div>
-              <label for="adults-count-field">Взрослые:</label>
-              <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
-              <input type="number" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
-              <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
-            </div>
-            <div>
-              <label for="children-count-field">Дети:</label>
-              <button type="button" class="button down-button"><span class="visually-hidden">Уменьшить</span></button>
-              <input type="number" name="children-count" value="0" id="children-count-field" min="0" max="5">
-              <button type="button" class="button up-button"><span class="visually-hidden">Увеличить</span></button>
+           <div class="search-field-column">
+            <label for="adults-count-field">Взрослые:</label>
+            <div class="booking-calendar-minus-plus">
+              <button type="button" class="button-grey updown_button down-button"><span class="visually-hidden">Уменьшить</span></button>
+              <input type="text" name="adults-count" id="adults-count-field" value="1" min="1" max="5">
+              <button type="button" class="button-grey updown_button up-button"><span class="visually-hidden">Увеличить</span></button>
             </div>
           </div>
+          <div class="search-field-column">
+            <label class="children-label" for="children-count-field">Дети:</label>
+            <div class="booking-calendar-minus-plus">
+            <button type="button" class="button-grey updown_button down-button"><span class="visually-hidden">Уменьшить</span></button>
+            <input type="text" name="children-count" value="0" id="children-count-field" min="0" max="5">
+            <button type="button" class="button-grey updown_button up-button"><span class="visually-hidden">Увеличить</span></button>
+            </div>
+          </div>
+        </div>
           <button type="submit" class="button blue-button search-button">
             Найти
           </button>
