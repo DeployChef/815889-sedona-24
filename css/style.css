@@ -629,6 +629,10 @@ a {
     padding: 10px;
 }
 
+.icons-feature-list h3{
+    margin-bottom: 0px;
+}
+
 .icons-feature-list .feature-item{
     padding: 58px 0;
 }
@@ -640,23 +644,32 @@ a {
 
 .house-ico{
     margin: 0 auto;
-    width: 75px;
-    height: 72px;
+    width: 80px;
+    height: 80px;
     background-image: url("../img/house-ico.svg");
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-size: 75px 72px;
 }
 
 .burger-ico{
     margin: 0 auto;
-    width: 74px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-image: url("../img/burger-ico.svg");
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-size: 74px 70px;
 }
 
 .gift-ico{
     margin: 0 auto;
-    width: 64px;
-    height: 76px;
+    width: 80px;
+    height: 80px;
     background-image: url("../img/gift-ico.svg");
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-size: 64px 76px;
 }
 
 .feature-item{
