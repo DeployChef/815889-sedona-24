@@ -221,7 +221,7 @@ a {
 
 
 
-.map-search {
+.map-search-form {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -233,6 +233,9 @@ a {
   display: flex;
   flex-direction: column;
   padding: 55px;
+}
+.map-search{
+    display: none;
 }
 
 .map-search input {
@@ -1112,3 +1115,75 @@ a {
 .search-calendar-btn:active .search-calendar-icon {
   fill: #81b3d2;
 }
+
+.map-search-hide {
+    -webkit-animation: formhide 0.7s forwards;
+            animation: formhide 0.7s forwards;
+  }
+  
+.map-search-show {
+    -webkit-animation: formshow 0.7s forwards;
+            animation: formshow 0.7s forwards;
+            display: block;
+}
+
+@-webkit-keyframes formshow {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes formshow {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes formhide {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+  @keyframes formhide {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+
