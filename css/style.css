@@ -85,6 +85,7 @@ a {
 
 
 .background-sedona {
+    background-color: #518dc5;
   width: 100%;
   height: 509px;
   background-image: url("../img/intro-welcome.svg"), url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
@@ -254,7 +255,7 @@ a {
 
 .map {
   height: 593px;
-  background-color: #5496bd;
+  background-color: #d0dbab;
   background-image: url("../img/map.jpg");
   background-size: cover;
 }
@@ -543,6 +544,7 @@ a {
 
 .filter {
   color: #ffffff;
+  background-color: #1c4f80; 
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position-y: -290px;
@@ -726,6 +728,7 @@ a {
 }
 
 .feature-picture-right::after {
+    background-color: #406647;
   content: "";
   background-image: url("../img/town-side.jpg");
   background-size: cover;
@@ -742,6 +745,7 @@ a {
 }
 
 .feature-picture-left::before {
+    background-color: #ad6410;
   content: "";
   background-image: url("../img/devil-bridge-side.jpg");
   background-size: cover;
@@ -804,7 +808,7 @@ a {
 
 .price-controls label {
   display: inline-block;
-  text-align: center;
+  text-align: left;
 
   font-size: 14px;
   line-height: 30px;
