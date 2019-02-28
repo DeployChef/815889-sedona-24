@@ -611,6 +611,17 @@ a {
 
 }
 
+.filter-checkbox:focus+label{
+    outline: 2px solid rgb(109, 167, 253);
+}
+
+.filter-checkbox:disabled+label{
+
+    opacity: 0.4;
+
+}
+
+
 
 .price-container {
   margin-left: auto;
