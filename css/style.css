@@ -1132,6 +1132,9 @@ a {
 .search-calendar-btn:focus .search-calendar-icon {
   fill: #000;
 }
+.search-calendar-btn:active{
+    outline: 0px;
+}
 
 .search-calendar-btn:active .search-calendar-icon {
   fill: #81b3d2;
