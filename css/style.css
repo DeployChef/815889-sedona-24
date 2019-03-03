@@ -660,6 +660,7 @@ a {
 
 .icons-feature-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
 }
@@ -674,6 +675,7 @@ a {
 
 .number-feature-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -708,7 +710,7 @@ a {
 }
 
 .feature-item {
-  width: 309px;
+  width: 308px;
   padding: 26px 46px 38px;
   flex-shrink: 0;
 }
