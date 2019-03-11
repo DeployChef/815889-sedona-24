@@ -720,6 +720,7 @@ a {
 .feature-picture-right {
   margin-top: 48px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-picture-right .feature-item {
@@ -743,16 +744,15 @@ a {
   padding: 9px 25px;
 }
 
-.feature-picture-right::after {
+.feature-picture-right-img {
     background-color: #406647;
-  content: "";
-  background-image: url("../img/town-side.jpg");
-  background-size: cover;
-  width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .feature-picture-left {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-picture-left .feature-item {
@@ -760,12 +760,10 @@ a {
   color: #ffffff;
 }
 
-.feature-picture-left::before {
+.feature-picture-left-img {
     background-color: #ad6410;
-  content: "";
-  background-image: url("../img/devil-bridge-side.jpg");
-  background-size: cover;
-  width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .search-intro {
